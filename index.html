@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Juego de Preguntas</title>
+</head>
+<body>
+    <div class="modal" id="temaModal">
+        <h2>Explicación de los Temas</h2>
+        <div class="tema">
+            
+ 
+            <div class="modal" id="temaModal">
+                <h2>Explicación de los Temas</h2>
+                <details>
+                    <summary>Comparativos y Superlativos</summary>
+                    <p>Los comparativos se utilizan para comparar dos cosas, mientras que los superlativos se utilizan para destacar una cualidad en su grado máximo. Por ejemplo, en inglés, "taller" es un comparativo de "tall" y "tallest" es su forma superlativa.</p>
+                </details>
+                <hr>
+                <details>
+                    <summary>Verbo "To Be"</summary>
+                    <p>El verbo "to be" es fundamental en inglés y se utiliza para expresar estados, identidades y características. Por ejemplo, "I am happy" (Estoy feliz) o "She is a teacher" (Ella es una profesora).</p>
+                </details>
+                <hr>
+                <details>
+                    <summary>Comparativos de Igualdad y Desigualdad</summary>
+                    <p>Los comparativos de igualdad se utilizan para expresar que dos cosas son iguales, como "as tall as" (tan alto como). Por otro lado, los comparativos de desigualdad se usan para mostrar diferencias, como "not tan tall as" (no tan alto como).</p>
+                </details>
+                <hr>
+                <details>
+                    <summary>Comparativos de Inferioridad e superioridad</summary>
+                    <p>Los comparativos de superioridad e inferioridad se utilizan para comparar dos elementos en términos de una característica específica. Los de superioridad expresan que algo o alguien tiene una cualidad en mayor grado que otro, usando estructuras como "more + adjetivo" o el sufijo "-er". Por otro lado, los de inferioridad indican que algo o alguien posee una cualidad en menor medida, generalmente empleando "less + adjetivo". Ambos permiten establecer relaciones de comparación claras y específicas en una conversación o texto.</p>
+                </details>
+            </div>
+    
+</div>
+    <!-- Aquí iría el menú principal del juego -->
+    <div id="menuPrincipal" style="display: none;">
+        <!-- El contenido del menú con las categorías y niveles -->
+    </div>
+
+
+
+    <div id="welcome">
+        <h1>QUESTION GAME</h1>
+        <input type="text" id="playerName" placeholder="Ingresa tu nombre" />
+        <button id="startButton">Iniciar</button>
+        <h2>JHONNIER FRANCO CASTANO</h2>
+        <h3>Ficha: 2928920</h3>
+        <h4>Instructora: Diana Manchola</h4>
+    </div>
+
+    <div id="menu" style="display: none;">
+        <h2>Selecciona la categoría y la dificultad</h2>
+        <select id="category">
+            <option value="Verbo to be">Verbo to be</option>
+            <option value="Comparativo y Superlativo">Comparativo y Superlativo</option>
+            <option value="Comparativos de Igualdad y Desigualdad">Comparativos de Igualdad y Desigualdad</option>
+            <option value="Comparativos de Inferioridad">Comparativos de Inferioridad</option>
+        </select>
+        <select id="difficulty">
+            <option value="easy">Fácil</option>
+            <option value="medium">Medio</option>
+            <option value="hard">Difícil</option>
+        </select>
+        <button id="loadCategoryButton">Cargar Preguntas</button>
+    </div>
+
+    <div id="questionContainer" style="display: none;">
+        <div id="question" class="question-box"></div>
+        <div id="optionsContainer" class="options-box"></div>
+        <button id="nextButton" class="next-button" style="display: none;">Siguiente</button>
+    </div>
+
+    <div id="scoreContainer" style="display: none;">
+        <h2>Puntuación: <span id="score"></span></h2>
+        <button id="backToMenuButton">Volver al Menú</button>
+    </div>
+    <div id="guide" style="position: fixed; bottom: 10px; left: 10px; background-color: rgba(0, 0, 0, 0.7); padding: 10px; border-radius: 5px;">
+        <p>Instrucciones:</p>
+        <p>1. Enter your name.</p>
+        <p>2. Select a category and difficulty.</p>
+        <p>3. Answer the questions.</p>
+        <p>4. Your score will be displayed at the end.</p>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
